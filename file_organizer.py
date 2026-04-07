@@ -33,7 +33,7 @@ PROGRESS_BG = "#333345"
 class App:
     def __init__(self):
         self.root = tk.Tk()
-        self.root.title("Organizador de Ficheiros")
+        self.root.title("FileOrder")
         self.root.geometry("480x660")
         self.root.configure(bg=BG)
         self.root.resizable(False, False)
@@ -54,7 +54,7 @@ class App:
         pad = dict(padx=18)
 
         # Title
-        tk.Label(self.root, text="Organizador de Ficheiros", bg=BG, fg=FG,
+        tk.Label(self.root, text="FileOrder", bg=BG, fg=FG,
                  font=("Segoe UI", 16, "bold")).pack(pady=(16, 6), **pad)
 
         # ── Folder frame ──
