@@ -38,6 +38,10 @@ class App:
         self.root.configure(bg=BG)
         self.root.resizable(False, False)
 
+        # Ícone da janela
+        icon_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "app_icon.ico")
+        self.root.iconbitmap(icon_path)
+
         self.folder    = tk.StringVar()
         self.preview   = []          # [(folder_name, count), ...]
         self.undo_log  = []          # [(src, dest), ...]  para desfazer
